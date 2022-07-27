@@ -1,5 +1,5 @@
 import React from "react";
-import Values from "values.js";
+import values from "values.js";
 import Colors from "./COMPONENTS/Colors";
 import Header from "./COMPONENTS/Header";
 import { nanoid } from "nanoid";
@@ -8,7 +8,7 @@ function App() {
   const [color, setColor] = React.useState("#123456");
   const [error, setError] = React.useState(false);
   const [colorList, setColorList] = React.useState(
-    new Values("#123456").all(10)
+    new values("#123456").all(10)
   );
 
   function changeColorValue(event) {
@@ -19,7 +19,7 @@ function App() {
   function handleSubmit(event) {
     event.preventDefault();
     try {
-      const colors = new Values(color).all(10);
+      const colors = new values(color).all(10);
       setColorList(colors);
       setError(false);
     } catch (error) {
