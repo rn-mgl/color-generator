@@ -1,8 +1,8 @@
 import React from "react";
 import Colors from "./COMPONENTS/Colors";
 import Header from "./COMPONENTS/Header";
-import { nanoid } from "nanoid";
 import Values from "values.js";
+import { nanoid } from "nanoid";
 
 function App() {
   const [color, setColor] = React.useState("#123456");
