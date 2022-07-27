@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.header {
+  padding: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  font-size: 1.1rem;
+  letter-spacing: 0.05rem;
+}
+
+.error input {
+  border-color: rgb(255, 0, 55);
+  border-width: 0.2rem;
+}
+
+.label {
+  margin-right: 1rem;
+
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.input {
+  margin-right: 1rem;
+
+  border-color: rgb(0, 0, 0);
+  border-radius: 0.3rem;
+  border-width: 0.2rem;
+
+  padding: 0.35rem;
+}
+
+.input:focus {
+  border-color: rgba(240, 248, 255, 0);
+}
+
+.generate-btn {
+  padding: 0.5rem;
+
+  border: none;
+  border-radius: 0.3rem;
+
+  cursor: pointer;
+
+  background: rgb(20, 20, 20);
+
+  color: white;
+}
+
+.colors-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 20rem));
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.5rem;
+}
+
+.color-card {
+  min-width: 15rem;
+  min-height: 7rem;
+
+  padding: 1rem;
+
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+
+  color: rgb(0, 19, 42);
+
+  cursor: pointer;
+
+  border-radius: 0.5rem;
+}
+
+.dark {
+  color: rgb(0, 19, 42);
+}
+
+.light {
+  color: white;
+}
+
+.weight-value {
+  padding: 0.5rem;
+}
+
+.hex-value {
+  padding: 0rem 0.5rem;
+}
+
+.copied {
+  padding: 0.5rem 0.5rem;
+  font-weight: 100;
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 0.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+  }
+
+  .form {
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+  }
+
+  .error input {
+    border-color: rgb(255, 0, 60);
+    border-width: 0.2rem;
+  }
+
+  .label {
+    margin-right: 1rem;
+
+    font-weight: 500;
+    font-size: 1.4rem;
+  }
+
+  .input {
+    margin-right: 1rem;
+
+    border-color: rgb(0, 0, 0);
+    border-radius: 0.3rem;
+    border-width: 0.2rem;
+
+    padding: 0.35rem;
+
+    height: 0.8rem;
+  }
+
+  .input:focus {
+    border-color: rgba(240, 248, 255, 0);
+  }
+
+  .generate-btn {
+    padding: 0.5rem;
+
+    border: none;
+    border-radius: 0.3rem;
+
+    cursor: pointer;
+
+    background: rgb(20, 20, 20);
+
+    color: white;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .colors-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 0rem));
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.5rem;
+  }
+
+  .color-card {
+    min-width: 15rem;
+    min-height: 5.5rem;
+
+    padding: 1rem;
+
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+
+    color: rgb(0, 19, 42);
+
+    cursor: pointer;
+
+    border-radius: 0.5rem;
+  }
+}
